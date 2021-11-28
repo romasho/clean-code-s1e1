@@ -19,24 +19,19 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-  
-  .header {
-    text-align: center;
-  }
-}
-
 .main-page {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.task-text,
-.task {
+
+.task,
+.task-text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
+
 .new-task-wrapper {
   display: flex;
 }
@@ -46,14 +41,14 @@
   padding: 0px;
 }
 
-.task-list-item,
-.heading {
+.heading,
+.task-list-item {
   list-style: none;
 }
 
+.button,
 .task-text,
-.task-list-checkbox, 
-.button {
+.task-list-checkbox {
   outline: none;
 }
 
@@ -70,7 +65,9 @@
 .button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
+
 .heading {
   color: #333;
   font-weight: 700;
@@ -80,6 +77,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .task-text {
   margin: 0;
   font-size: 18px;
@@ -92,16 +90,21 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .task-text:focus {
   color: #333;
 }
 
 /* New Task */
-.new-task .heading {
+
+.heading,
+.new-task {
   display: block;
   margin: 0 0 20px;
 }
-.task-text .new-task {
+
+.task-text 
+.new-task {
   width: 318px;
 }
 
@@ -114,6 +117,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .task-list-item > * {
   vertical-align: middle;
 }
@@ -121,41 +125,59 @@
 .task-list-checkbox {
   margin: 0 10px;
 }
+
 .task-list-item > .task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .task-text {
   width: 226px;
 }
-.delete .img-remove {
+
+.delete 
+.img-remove {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete .img-remove:hover {
+
+.delete 
+.img-remove:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.task-list-complited .task {
+
+.task-list-complited 
+.task {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.task-list .task-list-item .task-text {
+
+.task-list-item 
+.task-text {
   display: none;
 }
 
-.task-list .task-list-item .editMode .task-text {
+ .editMode 
+ .task-text {
   display: inline-block;
   width: 224px;
 }
 
-.task-list .task-list-item .editMode label {
+.editMode
+.task {
   display: none;
 }
 
+@media (max-width:768px) {
+  
+  .header {
+    text-align: center;
+  }
+}
