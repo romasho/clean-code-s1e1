@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,20 +8,19 @@
   <link rel="stylesheet" href="style.css" MEDIA="screen" charset="utf-8">
   <title>Todo App</title>
 </head>
-
   <body class="body">
     <header class="header">
       <img src="./eisenhower-matrix.jpg" class="header-img">
       <a class="header-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
-    <div class="main-page">
-        <p class="new-task">
-            <label for="new-task" class="heading">Add Item</label>
+    <main class="main-page">
+        <article class="new-task">
+            <h3 for="new-task" class="heading">Add Item</h3>
               <div class="new-task-wrapper">
                 <input  type="text" id="new-task" class="task-text">
                 <button class="button">Add</button>
             </div>
-        </p>
+        </article>
         <h3 class="heading">Todo</h3>
           <ul id="incompleteTasks" class="task-list">
             <li class="task-list-item">
@@ -56,7 +54,7 @@
               </button>
             </li>
           </ul>
-    </div>
+    </main>
     <script type="text/javascript" SRC="app.js"></script>      
   </body>
 </html>
