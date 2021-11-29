@@ -11,11 +11,11 @@
   text-align: right;
 }
 
-.header-img {
+.header__img {
   width: 100%;
 }
 
-.header-link {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -25,14 +25,14 @@
   margin: 0 auto 0;
 }
 
-.task,
-.task-text {
+.task-list__label,
+.task-list__text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.new-task-wrapper {
+.new-task__wrapper {
   display: flex;
 }
 
@@ -42,13 +42,13 @@
 }
 
 .heading,
-.task-list-item {
+.task-list__item {
   list-style: none;
 }
 
 .button,
-.task-text,
-.task-list-checkbox {
+.task-list__text,
+.task-list__checkbox {
   outline: none;
 }
 
@@ -78,7 +78,7 @@
   text-transform: uppercase;
 }
 
-.task-text {
+.task-list__text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -91,7 +91,7 @@
   color: #888;
 }
 
-.task-text:focus {
+.task-list__text:focus {
   color: #333;
 }
 
@@ -103,13 +103,13 @@
   margin: 0 0 20px;
 }
 
-.task-text 
+.task-list__text 
 .new-task {
   width: 318px;
 }
 
 /* Task list */
-.task-list-item {
+.task-list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -118,33 +118,33 @@
   align-items: center;
 }
 
-.task-list-item > * {
+.task-list__item > * {
   vertical-align: middle;
 }
 
-.task-list-checkbox {
+.task-list__checkbox {
   margin: 0 10px;
 }
 
-.task-list-item > .task {
+.task-list__item > .task-list__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task-text {
+.task-list__text {
   width: 226px;
 }
 
-.delete 
+.button__delete 
 .img-remove {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete 
+.button__delete 
 .img-remove:hover {
   transform: rotateZ(0);
 }
@@ -152,26 +152,26 @@
 /* Completed */
 
 .task-list-complited 
-.task {
+.task-list__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.task-list-item 
-.task-text {
+.task-list__item 
+.task-list__text {
   display: none;
 }
 
  .editMode 
- .task-text {
+ .task-list__text {
   display: inline-block;
   width: 224px;
 }
 
 .editMode
-.task {
+.task-list__label {
   display: none;
 }
 
